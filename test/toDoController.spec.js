@@ -17,6 +17,6 @@ describe('toDoController', function() {
     ];
 
     it('displays tasks', function() {
-        expect(ctrl.content.tasks).toEqual(items);
+        expect(ctrl.displayContent.tasks).toEqual(tasks);
     });
 });
