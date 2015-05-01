@@ -11,8 +11,8 @@
   </head>
   <body ng-controller="toDoController as toDoCtrl">
     <h1>To Do Avenger</h1>
-      <ul class="list-group">
-        <li>to do 1</li>
+      <ul class="listGroup" ng-repeat="task in toDoCtrl.displayContent.tasks">
+        <li ng-src="{{task.content}}">{{task.content}}</li>
       </ul>
   </body>
 </html>
