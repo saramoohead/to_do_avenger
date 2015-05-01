@@ -1,0 +1,25 @@
+{
+  "name": "To Do Avenger",
+  "version": "0.0.0",
+  "homepage": "https://github.com/saramoohead/to_do_avenger",
+  "authors": [
+    "Sara OC"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.3.15",
+    "angular-resource": "~1.3.15"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.15",
+    "angular-route": "~1.3.15"
+  }
+}
