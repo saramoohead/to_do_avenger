@@ -7,9 +7,10 @@ toDoAvenger.controller('toDoController', [function () {
             {
               "content": "learn to code Angular apps"
             },
-            {
-              "content": "get some sleep"
-            }
         ]
+    };
+
+    self.addTask = function() {
+        console.log("Yay app");
     };
 }]);

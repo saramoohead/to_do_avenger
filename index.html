@@ -11,8 +11,14 @@
   </head>
   <body ng-controller="toDoController as toDoCtrl">
     <h1>To Do Avenger</h1>
+    <section>
       <ul class="listGroup" ng-repeat="task in toDoCtrl.displayContent.tasks">
         <li ng-src="{{task.content}}">{{task.content}}</li>
       </ul>
+    </section>
+    <section>
+      <button ng-click="toDoCtrl.addTask()">Add To Do</button>
+    </section>
+
   </body>
 </html>

@@ -11,12 +11,18 @@ describe('toDoController', function() {
       {
         "content": "learn to code Angular apps"
       },
-      {
-        "content": "get some sleep"
-      }
     ];
 
-    it('displays tasks', function() {
+    it('initialises with an empty list', function() {
+        expect(ctrl.displayContent).toBeUndefined();
+    });
+
+    it('displays a task', function() {
         expect(ctrl.displayContent.tasks).toEqual(tasks);
     });
+
+    // it('displays a task when the add button is clicked', function() {
+    //     ctrl.addTask();
+    //     expect(ctrl.displayContent.tasks).toEqual(tasks);
+    // });
 });
