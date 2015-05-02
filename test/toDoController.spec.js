@@ -17,12 +17,9 @@ describe('toDoController', function() {
         expect(ctrl.displayContent).toBeUndefined();
     });
 
-    it('displays a task', function() {
+    it('displays a task when it is added', function() {
+        ctrl.addTask();
         expect(ctrl.displayContent.tasks).toEqual(tasks);
     });
 
-    // it('displays a task when the add button is clicked', function() {
-    //     ctrl.addTask();
-    //     expect(ctrl.displayContent.tasks).toEqual(tasks);
-    // });
 });
