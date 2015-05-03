@@ -12,13 +12,14 @@
   <body ng-controller="toDoController as toDoCtrl">
     <h1>To Do Avenger</h1>
     <section>
-      <ul class="listGroup" ng-repeat="task in toDoCtrl.displayContent.tasks">
-        <li ng-src="{{task.content}}">{{task.content}}</li>
+      <ul class="listGroup" ng-repeat="task in toDoCtrl.displayContent">
+        <li>{{toDoCtrl.taskContent}}</li>
       </ul>
     </section>
     <section>
-      <input type="text"></input>
-      <button ng-click="toDoCtrl.addTask()">Add To Do</button>
+      <input type="text"
+             ng-model="toDoCtrl.taskContent"></input>
+      <button class="addbtn" ng-click="toDoCtrl.addTask()">Add To Do</button>
     </section>
 
   </body>

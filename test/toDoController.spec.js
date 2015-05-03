@@ -22,4 +22,6 @@ describe('toDoController', function() {
         expect(ctrl.displayContent.tasks).toEqual(tasks);
     });
 
+    // shouldn't your addTask in your final test have an argument of content?
+
 });

@@ -4,11 +4,7 @@ toDoAvenger.controller('toDoController', [function () {
 
     self.addTask = function() {
         self.displayContent = {
-            tasks: [
-                {
-                  "content": "learn to code Angular apps"
-                },
-            ]
+            content: 'self.taskContent'
         };
     };
 }]);
